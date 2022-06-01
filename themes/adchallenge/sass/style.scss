@@ -1,0 +1,60 @@
+body {
+    background-color: #101010;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    .region-header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #block-adchallenge-branding {
+        display: flex;
+        align-items: center;
+        .site-logo {
+            padding-right: 31px;
+        }
+    }
+    
+
+  
+   
+}
+
+.region-content {
+    .agiledrop-content-full-top-content-header {
+        position: absolute;
+        height: 724px;
+        width: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        z-index: -1;
+
+    }
+    .container {
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
+.menu {
+    display: flex;
+    li {
+        margin-right: 1.5rem;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 700px;
+}
