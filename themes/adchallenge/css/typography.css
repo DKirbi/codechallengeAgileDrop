@@ -39,29 +39,4 @@ p {
   font-size: 0.875rem;
   line-height: 30px;
 }
-
-article h2 {
-  text-transform: none;
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-article h2 a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-article .createdDate {
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: #949494;
-  margin-bottom: 24px;
-}
-
-article .links .node-readmore a {
-  font-size: 0.875rem;
-}
 /*# sourceMappingURL=typography.css.map */

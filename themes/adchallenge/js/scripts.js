@@ -5,7 +5,7 @@ window.onload = function() {
     document.getElementById('block-adchallenge-content').id = 'challenge-news';
     
     
-
+//create missing about-me image elements
     const box1Div = document.createElement("div");
     const box2Div = document.createElement("div");
     box1Div.classList.add('box1');
@@ -18,12 +18,11 @@ window.onload = function() {
    
 }
 
+//Navigation active state functionality
 window.addEventListener('hashchange', function() {
 
     const navMenu = document.getElementById('block-adchallenge-main-menu');
     const navItem = navMenu.getElementsByTagName('a');
-    // const links = navItem.document.getElementsByTagName('a');
-    // console.log(links);
     let hash = window.location.hash;
 
     console.log(hash);
@@ -40,20 +39,6 @@ window.addEventListener('hashchange', function() {
     }
     
 });
-
-
-
-// function setActive() {
-//    const navItem = document.getElementsByClassName('menu-item').getElementsByTagName('a');
-//     console.log('something3');
-//     for(let i = 0; i < navItem.length; i++) {
-//         if(document.location.href.indexOf(navItem[i].href)>=0) {
-//              navItem[i].className='active';
-//         }
-//     }
-    
-// }
-// window.onload = setActive;
 
 
 

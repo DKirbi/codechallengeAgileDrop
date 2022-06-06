@@ -40,20 +40,6 @@ p {
   line-height: 30px;
 }
 
-article h2 {
-  text-transform: none;
-  border-bottom: none;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-article h2 a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
 article .createdDate {
   font-size: 0.75rem;
   font-weight: 400;
@@ -198,7 +184,7 @@ main {
   margin-top: 700px;
 }
 
-main #block-top-content-header {
+main .layout-content #block-top-content-header {
   background-image: url("/sites/default/files/2020-02/hero.jpg") !important;
   position: absolute;
   height: 724px;
@@ -211,12 +197,12 @@ main #block-top-content-header {
   top: 0;
 }
 
-main #challenge-home {
+main .layout-content #challenge-home {
   text-align: center;
   margin-top: 280px;
 }
 
-main #challenge-home h2 {
+main .layout-content #challenge-home h2 {
   position: relative;
   white-space: nowrap;
   width: 100%;
@@ -228,7 +214,7 @@ main #challenge-home h2 {
   font-size: 1.25rem;
 }
 
-main #challenge-home h2::after {
+main .layout-content #challenge-home h2::after {
   content: "";
   margin-top: 32px;
   display: block;
@@ -240,11 +226,11 @@ main #challenge-home h2::after {
   margin-left: auto;
 }
 
-main #challenge-home .field__item {
+main .layout-content #challenge-home .field__item {
   margin-top: 20px;
 }
 
-main #challenge-home .field__item a {
+main .layout-content #challenge-home .field__item a {
   color: #fff;
   text-decoration: none;
   padding: 17px 51px;
@@ -252,19 +238,21 @@ main #challenge-home .field__item a {
   background-color: #FF5252;
 }
 
-main #challenge-home .field__item a:hover {
+main .layout-content #challenge-home .field__item a:hover {
   background-color: transparent;
   border: 1px solid #fff;
 }
 
-#challenge-news, #block-adchallenge-content {
+main .layout-content #challenge-news,
+main .layout-content #block-adchallenge-content {
   max-width: none;
   width: 100%;
   padding: 124px 15px 0 15px;
 }
 
 @media (min-width: 940px) {
-  #challenge-news, #block-adchallenge-content {
+  main .layout-content #challenge-news,
+  main .layout-content #block-adchallenge-content {
     padding-top: 124px;
     max-width: 1200px;
     margin-left: auto;
@@ -272,7 +260,8 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#challenge-news .view-content, #block-adchallenge-content .view-content {
+main .layout-content #challenge-news .view-content,
+main .layout-content #block-adchallenge-content .view-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +275,8 @@ main #challenge-home .field__item a:hover {
 }
 
 @media (min-width: 1024px) {
-  #challenge-news .view-content, #block-adchallenge-content .view-content {
+  main .layout-content #challenge-news .view-content,
+  main .layout-content #block-adchallenge-content .view-content {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -297,19 +287,22 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#challenge-news .view-content .views-row, #block-adchallenge-content .view-content .views-row {
+main .layout-content #challenge-news .view-content .views-row,
+main .layout-content #block-adchallenge-content .view-content .views-row {
   max-width: 300px;
   width: 100%;
 }
 
 @media (min-width: 420px) {
-  #challenge-news .view-content .views-row, #block-adchallenge-content .view-content .views-row {
+  main .layout-content #challenge-news .view-content .views-row,
+  main .layout-content #block-adchallenge-content .view-content .views-row {
     max-width: none;
   }
 }
 
 @media (min-width: 1024px) {
-  #challenge-news .view-content .views-row, #block-adchallenge-content .view-content .views-row {
+  main .layout-content #challenge-news .view-content .views-row,
+  main .layout-content #block-adchallenge-content .view-content .views-row {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -320,40 +313,72 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#challenge-news .view-content .views-row article .image-style-article-teaser, #block-adchallenge-content .view-content .views-row article .image-style-article-teaser {
+main .layout-content #challenge-news .view-content .views-row article h2,
+main .layout-content #block-adchallenge-content .view-content .views-row article h2 {
+  text-transform: none;
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+main .layout-content #challenge-news .view-content .views-row article h2 a,
+main .layout-content #block-adchallenge-content .view-content .views-row article h2 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+main .layout-content #challenge-news .view-content .views-row article .node__content .createdDate,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .createdDate {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #949494;
+  margin-bottom: 24px;
+}
+
+main .layout-content #challenge-news .view-content .views-row article .node__content .image-style-article-teaser,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .image-style-article-teaser {
   width: 100%;
   max-width: none;
   height: auto;
 }
 
 @media (min-width: 1024) {
-  #challenge-news .view-content .views-row article .image-style-article-teaser, #block-adchallenge-content .view-content .views-row article .image-style-article-teaser {
+  main .layout-content #challenge-news .view-content .views-row article .node__content .image-style-article-teaser,
+  main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .image-style-article-teaser {
     max-width: 310px;
   }
 }
 
-#challenge-news .view-content .views-row article .field--type-text-with-summary, #block-adchallenge-content .view-content .views-row article .field--type-text-with-summary {
+main .layout-content #challenge-news .view-content .views-row article .node__content .field--type-text-with-summary,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .field--type-text-with-summary {
   max-width: none;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  #challenge-news .view-content .views-row article .field--type-text-with-summary, #block-adchallenge-content .view-content .views-row article .field--type-text-with-summary {
+  main .layout-content #challenge-news .view-content .views-row article .node__content .field--type-text-with-summary,
+  main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .field--type-text-with-summary {
     max-width: 300px;
   }
 }
 
-#challenge-news .view-content .views-row article .links .node-readmore, #block-adchallenge-content .view-content .views-row article .links .node-readmore {
+main .layout-content #challenge-news .view-content .views-row article .node__content .links .node-readmore,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .links .node-readmore {
   padding: 0;
 }
 
-#challenge-news .view-content .views-row article .links .node-readmore a, #block-adchallenge-content .view-content .views-row article .links .node-readmore a {
+main .layout-content #challenge-news .view-content .views-row article .node__content .links .node-readmore a,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .links .node-readmore a {
   position: relative;
   color: #fff;
   text-decoration: none;
+  font-size: 0.875rem;
 }
 
-#challenge-news .view-content .views-row article .links .node-readmore a:after, #block-adchallenge-content .view-content .views-row article .links .node-readmore a:after {
+main .layout-content #challenge-news .view-content .views-row article .node__content .links .node-readmore a:after,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .links .node-readmore a:after {
   content: "";
   border: solid #FF5252;
   border-width: 0 2px 2px 0;
@@ -364,15 +389,16 @@ main #challenge-home .field__item a:hover {
   margin-left: 10px;
 }
 
-#challenge-news .view-content .views-row article .links .node-readmore a:hover::after, #block-adchallenge-content .view-content .views-row article .links .node-readmore a:hover::after {
+main .layout-content #challenge-news .view-content .views-row article .node__content .links .node-readmore a:hover::after,
+main .layout-content #block-adchallenge-content .view-content .views-row article .node__content .links .node-readmore a:hover::after {
   border-color: #0097A7;
 }
 
-#block-latest-event {
+main .layout-content #block-latest-event {
   background-color: #161E21;
 }
 
-#block-latest-event .container {
+main .layout-content #block-latest-event .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +412,7 @@ main #challenge-home .field__item a:hover {
 }
 
 @media (min-width: 1024px) {
-  #block-latest-event .container {
+  main .layout-content #block-latest-event .container {
     padding: 120px 15px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -401,42 +427,42 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#block-latest-event .container .content-right .field--type-text-with-summary {
+main .layout-content #block-latest-event .container .content-right .field--type-text-with-summary {
   max-width: none;
   width: 100%;
   padding-right: 15px;
 }
 
 @media (min-width: 1024px) {
-  #block-latest-event .container .content-right .field--type-text-with-summary {
+  main .layout-content #block-latest-event .container .content-right .field--type-text-with-summary {
     max-width: 570px;
   }
 }
 
-#block-latest-event .container .img-left .image-style-article-teaser {
+main .layout-content #block-latest-event .container .img-left .image-style-article-teaser {
   max-width: 280px;
   height: auto;
   display: block;
 }
 
 @media (min-width: 420px) {
-  #block-latest-event .container .img-left .image-style-article-teaser {
+  main .layout-content #block-latest-event .container .img-left .image-style-article-teaser {
     max-width: none;
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  #block-latest-event .container .img-left .image-style-article-teaser {
+  main .layout-content #block-latest-event .container .img-left .image-style-article-teaser {
     width: 100%;
   }
 }
 
-#block-about-me {
+main .layout-content #block-about-me {
   padding: 245px 15px;
 }
 
-#block-about-me .container {
+main .layout-content #block-about-me .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,11 +470,10 @@ main #challenge-home .field__item a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 15px;
 }
 
 @media (min-width: 1024px) {
-  #block-about-me .container {
+  main .layout-content #block-about-me .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -462,26 +487,26 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#block-about-me .content-left h2 {
+main .layout-content #block-about-me .content-left h2 {
   margin-top: 0;
 }
 
-#block-about-me .content-left p {
+main .layout-content #block-about-me .content-left p {
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  #block-about-me .content-left p {
+  main .layout-content #block-about-me .content-left p {
     max-width: 420px;
   }
 }
 
-#block-about-me .img-right {
+main .layout-content #block-about-me .img-right {
   position: relative;
 }
 
 @media (min-width: 1024px) {
-  #block-about-me .img-right .box1 {
+  main .layout-content #block-about-me .img-right .box1 {
     background-color: #1D1524;
     width: 150px;
     height: 150px;
@@ -493,8 +518,8 @@ main #challenge-home .field__item a:hover {
     bottom: -75px;
     z-index: -1;
   }
-  #block-about-me .img-right .box2 {
-    background-color: #0F2123;
+  main .layout-content #block-about-me .img-right .box2 {
+    background: #0F2123;
     width: 330px;
     height: 330px;
     position: absolute;
@@ -504,20 +529,20 @@ main #challenge-home .field__item a:hover {
   }
 }
 
-#block-about-me .img-right .image-style-about-me {
+main .layout-content #block-about-me .img-right .image-style-about-me {
   display: block;
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 1024px) {
-  #block-about-me .img-right .image-style-about-me {
+  main .layout-content #block-about-me .img-right .image-style-about-me {
     max-width: 520px;
   }
 }
 
 footer {
-  background-color: #0f2123;
+  background-color: #0F2123;
 }
 
 footer #block-footer {
@@ -531,13 +556,18 @@ footer #block-footer .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0 15px;
 }
 
-footer #block-footer .menu .menu-item {
-  padding-right: 40px;
+@media (min-width: 1024px) {
+  footer #block-footer .menu {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 footer #block-footer .menu .menu-item a {
